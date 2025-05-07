@@ -2,15 +2,17 @@
 import { BrowserRouter } from "react-router-dom";
 import { AppRoutes } from "./Routes";
 import { Header } from "./components/header";
+import { Footer } from "./components/footer";
 
 function App() {
   return (
     <BrowserRouter>
-      <div className="min-h-screen bg-gray-100">
+      <div className="min-h-screen bg-gray-300">
         <Header />
-        <main className="py-8">
+        <main className="bg-gray-300 py-8">
           <AppRoutes />
         </main>
+        <Footer />
       </div>
     </BrowserRouter>
   );

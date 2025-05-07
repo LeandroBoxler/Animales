@@ -23,7 +23,7 @@ export const Header = () => {
         </li>
 
         <li>
-          <Link to="/" className="hover:underline">
+          <Link to="/volunteering" className="hover:underline">
             Voluntariado
           </Link>
         </li>
@@ -33,11 +33,24 @@ export const Header = () => {
           </Link>
         </li>
         <li>
-          <Link to="/" onClick={handleClick}>
+          <Link to="/register">Registrarme</Link>
+        </li>
+        <li>
+          <Link to="/login">Iniciar sesion</Link>
+        </li>
+        <li className="">
+          <Link
+            to="/"
+            className=""
+            onMouseEnter={() => setMenu(true)}
+            onMouseOut={() => setMenu(false)}
+            onClick={handleClick}
+          >
             Quiero adoptar
           </Link>
+
           <div
-            className={`absolute mt-2 w-full shadow-md rounded transition-all duration-300 ease-in-out overflow-hidden ${
+            className={`bg-purple-600 absolute shadow-md rounded transition-all duration-300 w-1/12 ${
               menu ? "max-h-40 opacity-100" : "max-h-0 opacity-0"
             }`}
           >
@@ -49,9 +62,11 @@ export const Header = () => {
             </li>
           </div>
         </li>
-        <li className="bg-yellow-400 px-7 py-4 rounded-full flex items-center">
-          Donar
-        </li>
+        <Link to="/donates">
+          <li className="bg-yellow-400 px-7 py-4 rounded-full flex items-center">
+            Donar
+          </li>
+        </Link>
       </ul>
     </header>
   );
