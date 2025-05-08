@@ -17,7 +17,7 @@ export const Footer = () => {
             placeHolder="correo@gmail.com"
             className="w-1/2"
           />
-          <ButtomSubmit className="w-1/4" name="Suscribirse" />
+          <ButtomSubmit className="lg:w-1/4" name="Suscribirse" />
         </div>
         <div>logos</div>
       </div>

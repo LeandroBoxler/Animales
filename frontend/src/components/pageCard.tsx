@@ -5,7 +5,7 @@ interface Props {
 
 export const PageCard = ({ children, className }: Props) => {
   return (
-    <main className={`bg-white p-4 rounded-lg shadow-lg m-6 ${className}`}>
+    <main className={`bg-white p-4 rounded-lg shadow-lg  ${className}`}>
       {children}
     </main>
   );

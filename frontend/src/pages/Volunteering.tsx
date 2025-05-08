@@ -5,7 +5,7 @@ export const Volunteering = () => {
   return (
     <div className="p-4">
       <h1 className="text-5xl w-full mb-5">Voluntareado</h1>
-      <PageCard>
+      <PageCard className="mb-5">
         <h1 className="text-4xl mb-5">¿Que hacemos?</h1>
 
         <p>
@@ -40,7 +40,7 @@ export const Volunteering = () => {
         <ul>
           <li></li>
         </ul>
-        <ButtomSubmit name="Registrarme" className="w-1/4" />
+        <ButtomSubmit name="Registrarme" className="lg:w-[20%]" />
       </PageCard>
     </div>
   );

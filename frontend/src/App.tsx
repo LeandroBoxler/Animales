@@ -9,9 +9,7 @@ function App() {
     <BrowserRouter>
       <div className="min-h-screen bg-gray-300">
         <Header />
-        <main className="bg-gray-300 py-8">
-          <AppRoutes />
-        </main>
+        <AppRoutes />
         <Footer />
       </div>
     </BrowserRouter>
